@@ -1,0 +1,45 @@
+Angular install Ангуляр установка
+
+npm install -g typescript
+
+tsc -v
+
+Create main.ts then
+tsc main.ts
+
+To run js file (appearing main.js)
+node main.js
+
+Watch changes
+tsc main --watch
+
+Run usual program
+node main
+
+TYPESCRIPT
+Typescript advanced
+
+1. In folder:
+npm init  (or npm init -y)
+2. npm install -D typescript (возможно, его надо установить ещё и глобально)
+3. tsc -v
+4. Если версии в консоли и package.json разные, то:
+npm i -g typescript
+5. tsc --init
+6. Появляется файл tsconfig.json,
+В котором можно настроить exclude, include, files - файлы, которые будут компилироваться тайпсариптом. А также можно указать раскомментить outDir "./dist", root "./src" чтобы он так собирался проект.
+В target если удалить es5 и нажать Ctrl+пробел можно увидеть все возможные синтаксисы
+
+По умолчанию в lib подключаются ряд библиотек - подробно на typescriptlang.org -> compiler options
+
+sourceMap - ошибки выдает не в скомпилированном коде, а в исходниках
+
+removeComments true - удаляет комментарии из конечного скомпилированного бандла
+
+
+
+7. Чтобы постоянно следить за изменениями и каждый раз не компилировать при помощи tsc:
+tsc -w
+Or
+tsc --watch
+
